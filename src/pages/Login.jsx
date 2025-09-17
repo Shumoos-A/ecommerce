@@ -1,11 +1,8 @@
-import React from 'react'
-
-const Login = () => {
+export default function Login() {
   return (
-    <div>
-      
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Login Page</h1>
+      <p>Welcome! This is the login page.</p>
     </div>
-  )
+  );
 }
-
-export default Login
