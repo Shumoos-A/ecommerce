@@ -177,7 +177,7 @@ const CartPage: React.FC = () => {
                 >
                   Proceed to Checkout
                 </motion.button>
-              </Link>
+              </Link >
 
               <Link to="/">
                 <motion.button

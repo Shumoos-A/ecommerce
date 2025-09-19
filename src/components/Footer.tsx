@@ -62,6 +62,16 @@ const Footer: React.FC = () => {
 
           <div className="flex items-center space-x-4">
             <motion.a
+              href="https://www.instagram.com/shumoos_rasul?igsh=MXEwa2tqOXIxbWlhcg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              <Instagram className="w-4 h-4" />
+            </motion.a>
+<motion.a
               href="https://www.instagram.com/_ocyi"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,16 +82,8 @@ const Footer: React.FC = () => {
               <Instagram className="w-4 h-4" />
             </motion.a>
 
-            <motion.a
-              href="https://www.instagram.com/shumoos_rasul?igsh=MXEwa2tqOXIxbWlhcg=="
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              <Instagram className="w-4 h-4" />
-            </motion.a>
+            
+
 
             <span className="text-gray-500 text-sm">
               © 2025 EliteStore. All rights reserved.

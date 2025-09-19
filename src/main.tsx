@@ -5,7 +5,9 @@ import "./index.css";
 import { CartProvider } from "./context/CartContext";
 import { FavoriteProvider } from "./context/FavoriteContext";
 
+
 createRoot(document.getElementById("root") as HTMLElement).render(
+ 
   <StrictMode>
     <CartProvider>
       <FavoriteProvider>
@@ -13,6 +15,7 @@ createRoot(document.getElementById("root") as HTMLElement).render(
       </FavoriteProvider>
     </CartProvider>
   </StrictMode>
+  
 );
 
   
