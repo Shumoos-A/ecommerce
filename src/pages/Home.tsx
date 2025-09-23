@@ -2,6 +2,7 @@
 // src/pages/Home.tsx
 import React, { useState, useMemo, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // 👈 لإضافة الرابط
 import ProductCard from '../components/ProductCard';
 import Filters from '../components/Filters';
 import { products } from '../data/products';
@@ -23,8 +24,10 @@ const Home: React.FC<HomeProps> = ({ searchTerm }) => {
       const matchesSearch =
         product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.description.toLowerCase().includes(searchTerm.toLowerCase());
+
       const matchesCategory =
         selectedCategory === 'All' || product.category === selectedCategory;
+
       const matchesPrice =
         product.price >= priceRange[0] && product.price <= priceRange[1];
 
@@ -50,7 +53,7 @@ const Home: React.FC<HomeProps> = ({ searchTerm }) => {
     return filtered;
   }, [searchTerm, selectedCategory, priceRange, sortBy]);
 
-  // تعليقات معدلة مع أسماء مختلفة وعدد أكبر
+  // تعليقات
   const comments = [
     { id: 1, name: "Ali", avatar: "https://i.pravatar.cc/50?img=4", message: "Great product!", date: "2025-09-19 09:00 AM" },
     { id: 2, name: "Sara", avatar: "https://i.pravatar.cc/50?img=5", message: "Fast delivery!", date: "2025-09-18 03:20 PM" },
@@ -131,7 +134,10 @@ const Home: React.FC<HomeProps> = ({ searchTerm }) => {
                     transition={{ delay: index * 0.1 }}
                     layout
                   >
-                    <ProductCard product={product} />
+                    {/* 👇 رابط يوديك لصفحة تفاصيل المنتج */}
+                    <Link to={`/product/${product.id}`}>
+                      <ProductCard product={product} />
+                    </Link>
                   </motion.div>
                 ))}
               </motion.div>

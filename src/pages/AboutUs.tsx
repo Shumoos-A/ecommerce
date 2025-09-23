@@ -11,7 +11,7 @@ const AboutUs = () => {
         </p>
 
         <p className="text-gray-700 text-lg mb-4">
-          We are students at <span className="font-semibold">Women in Tech</span>, and this project is a collaborative assignment completed by <span className="font-semibold">Shumoos & Huda Hussein</span>.
+          We are students at <span className="font-semibold">Women in Tech</span>, and this project is a collaborative assignment completed by <span className="font-semibold">Shumoos Abdulrasool and Huda Hussein </span>.
         </p>
 
         <p className="text-gray-700 text-lg">

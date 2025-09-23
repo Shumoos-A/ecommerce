@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({ searchTerm, setSearchTerm }) => {
     className="w-12 h-12 bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg"
   >
     <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-      <span className="text-white font-bold text-lg">H&S</span>
+      <span className="text-white font-bold text-lg">S&H</span>
     </div>
   </motion.div>
   <span className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">

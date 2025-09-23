@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Instagram, Heart } from "lucide-react";
 import { motion } from "framer-motion";
@@ -55,8 +56,9 @@ const Footer: React.FC = () => {
             <Heart className="w-4 h-4 text-red-500 fill-current" />
             <span className="text-gray-600">by</span>
             <div className="font-semibold text-gray-800 flex flex-col">
-              <span>Huda Hussein</span>
-              <span>Shumoos Abdulrasul</span>
+              
+             <span>Shumoos Abdulrasool</span>
+               <span>Huda Hussein</span>
             </div>
           </div>
 

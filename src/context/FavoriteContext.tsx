@@ -10,6 +10,7 @@ type Product = {
 type FavoriteContextType = {
   favorites: Product[];
   toggleFavorite: (product: Product) => void;
+  isFavorite: (id: number) => boolean;
 };
 
 const FavoriteContext = createContext<FavoriteContextType | undefined>(undefined);
@@ -25,8 +26,10 @@ export const FavoriteProvider = ({ children }: { children: ReactNode }) => {
     );
   };
 
+  const isFavorite = (id: number) => favorites.some((item) => item.id === id);
+
   return (
-    <FavoriteContext.Provider value={{ favorites, toggleFavorite }}>
+    <FavoriteContext.Provider value={{ favorites, toggleFavorite, isFavorite }}>
       {children}
     </FavoriteContext.Provider>
   );

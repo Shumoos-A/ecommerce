@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Comments from "./pages/Comments";
 import Login from "./pages/Login"; // استدعاء صفحة Login
 import CheckoutPage from "./pages/CheckoutPage";
+import ProductDetails from "./pages/ProductDetails"
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/comments" element={<Comments />} />
                     <Route path="/login" element={<Login />} /> {/* 👈 هنا */}
                    <Route path="/checkout" element={<CheckoutPage />} />  
+                   <Route path="/product/:id" element={<ProductDetails/>} />
               </Routes>
             </div>
             <Footer />
